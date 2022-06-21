@@ -70,7 +70,7 @@
           <label for="l-size" class="size-radio-btn">l</label>
 
           <p class="product-sub-heading">Purchase</p>
-          <button class="purchase-btn" onclick="addItemToCart('Wrap Dress','$69','images/ladies_clothes1.jpg')">add to cart</button>
+          <button class="purchase-btn" onclick=show())">add to cart</button>
 
         </div>
       </section>
@@ -81,15 +81,6 @@
         <p>Calf-length dress in gently draping jersey with a V-neck and sewn-in wrapover with narrow ties at one side. Softly draping butterfly sleeves and a gently flared skirt.</p>
       </section>
 
-      <div class="shop-item">
-          <span class="shop-item-title">Wrap dress</span>
-          <img class="shop-item-image" src="images/ladies_clothes1.jpg">
-          <div class="shop-item-details">
-              <span class="shop-item-price">$69</span>
-              <button class="btn btn-primary shop-item-button" type="button" onclick=testing()>ADD TO CART</button>
-          </div>
-      </div>
-
       <iframe src="cart.html" id="testing-cart" width=100% height=400px></iframe>
 
       <!-- JavaScript for navigation bar -->
@@ -99,6 +90,12 @@
       <script src=js/image_slider.js></script>
 
       <script>
+        function show() {
+            var iframe1 = document.getElementById('testing-cart');
+            iframe1.style.display = 'block';
+            testing();
+        }
+
         function testing() {
           window.frames[0].frameElement.contentWindow.addItemToCart('Testing tshirt','$100','images/ladies_clothes1.jpg');
           // window.frames[0].frameElement.contentWindow.addToCartClicked();
