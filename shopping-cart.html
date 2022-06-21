@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart JS</title>
+    <link rel="stylesheet" href="shopping-cart.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="" class="dropbtn">Shop</a>
+        <div class="dropdown-content">
+          <a href="ladies.html">Ladies</a>
+          <a href="men.html">Men</a>
+          <a href="kids.html">Kids</a>
+        </div>
+      </li>
+
+      <div class="navbar-right">
+        <nav>
+          <ul>
+            <li><a href=""><img src="images/account_logo.png" width= "15px"></a></li>
+            <li><a href="shopping-cart.html"><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <h1> Shopping Cart </h1>
+    <div class="app-container">
+            <div class="shopping-bag">
+                    <img src="./icons/bag.png" alt="cart">
+                    <h3>Cart</h3>
+                    <div class="total-items-in-cart">
+                      <h3>0</h3>
+                    </div>
+            </div>
+    </div>
+    <div class="product
+    s-list">
+        <div class="products">
+            <!-- render porducts here -->
+        </div>
+        <div class="cart">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                <!-- render cart items here -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="./img/t1.png" alt="t-shirt 1">
+                        <h4>T-shirt 1</h4>
+                    </div>
+                    <div class="unit-price">
+                        <small>$</small>29.99
+                    </div>
+                    <div class="units">
+                        <div class="btn minus">-</div>
+                        <div class="number">1</div>
+                        <div class="btn plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal (0 items): $0
+                </div>
+                <div class="checkout">
+                    Proceed to checkout
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const porductsListEl = document.querySelector(".products-list");
+        const seeMoreBtn = document.querySelector(".see-more-btn");
+
+        seeMoreBtn.addEventListener('click', () => {
+            porductsListEl.scrollIntoView({behavior: "smooth"})
+        })
+    </script>
+
+<script src="./products.js"></script>
+<script src="./app.js"></script>
+
+<!-- JavaScript for navigation bar -->
+<script src=js/nav.js></script>
+</body>
+</html>

@@ -13,9 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
 
-
+    <!-- JavaScript for Shopping Cart -->
+    <script src="js/cart.js" async></script>
   </head>
   <body>
+
+
+    <!-- Navigation Bar -->
+      <div class="navbar" id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">Shop</a>
+          <div class="dropdown-content">
+            <a href="ladies.html">Ladies</a>
+            <a href="men.html">Men</a>
+            <a href="kids.html">Kids</a>
+          </div>
+        </li>
+
+        <div class="navbar-right">
+          <nav>
+            <ul>
+              <li><a href=""><img src="images/account_logo.png" width= "15px"></a></li>
+              <li><a href=""><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
       <div id="nav-placeholder"></div>
       <div class="container-fliud">
 
@@ -29,16 +54,30 @@
                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
            </div>
            <div class="cart-items">
+               <div class="cart-row">
+                   <div class="cart-item cart-column">
+                       <img class="cart-item-image" src="images/ladies_clothes5.jpg" width="100" height="100">
+                       <span class="cart-item-title">T-Shirt</span>
+                   </div>
+                   <span class="cart-price cart-column">$19.99</span>
+                   <div class="cart-quantity cart-column">
+                       <input class="cart-quantity-input" type="number" value="1">
+                       <button class="btn btn-danger" type="button">REMOVE</button>
+                   </div>
+               </div>
+      
            </div>
            <div class="cart-total">
                <strong class="cart-total-title">Total</strong>
-               <span class="cart-total-price">$0</span>
+               <span class="cart-total-price">$39.97</span>
            </div>
            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
        </section>
 
-      <!-- JavaScript for Shopping Cart -->
-      <script src="js/cart.js"></script>
+
+      <!-- JavaScript for navigation bar -->
+      <script src=js/nav.js></script>
+
 
   </body>
 </html>
