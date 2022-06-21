@@ -33,7 +33,7 @@
           <nav>
             <ul>
               <li><a href=""><img src="images/account_logo.png" width= "15px"></a></li>
-              <li><a href=""><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
+              <li><a href="cart.html"><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
             </ul>
           </nav>
         </div>
@@ -71,7 +71,7 @@
 
           <p class="product-sub-heading">Purchase</p>
           <!-- <button class="purchase-btn" type="button" onclick=testing())">add to cart</button> -->
-          <button class="btn btn-primary shop-item-button" type="button" onclick=testing()>ADD TO CART</button>
+          <button class="btn btn-primary shop-item-button" id='hideshow' type="button" onclick=testing()>ADD TO CART</button>
 
         </div>
       </section>
@@ -82,7 +82,13 @@
         <p>Calf-length dress in gently draping jersey with a V-neck and sewn-in wrapover with narrow ties at one side. Softly draping butterfly sleeves and a gently flared skirt.</p>
       </section>
 
-      <iframe src="cart.html" id="testing-cart" width=100% height=400px></iframe>
+
+      <!-- iFrame for cart -->
+      <div class="panel">
+        <iframe src="cart.html" class="iframe-content" width=100% scrolling="no" style="border:0; display:none"></iframe>
+    </div>
+
+
 
       <!-- JavaScript for navigation bar -->
       <script src=js/nav.js></script>
@@ -95,13 +101,31 @@
           window.frames[0].frameElement.contentWindow.addItemToCart('Testing tshirt','$100','images/ladies_clothes1.jpg');
           // window.frames[0].frameElement.contentWindow.addToCartClicked();
         }
-
-//       }
 //   </script>
-// <!--
-        document.getElementById('targetFrame').contentWindow.targetFunction()
-      </script>
-         -->
-      <!-- </script> -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+          $('#hideshow').on('click', function(event) {
+             $('.iframe-content').toggle('show');
+          });
+        });
+    </script>
+
+    <script>
+      window.onscroll = function()
+      {scrollFunction()};
+
+      var navbar= document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function scrollFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

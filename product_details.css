@@ -141,3 +141,17 @@
   margin: 15px 0 30px;
   color: #976f48;
 }
+.iframe-content {
+
+}
+.iframe-content .sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.iframe-content  .sticky + .content {
+  padding-bottom: 60px;
+    z-index: 10;
+}
