@@ -57,10 +57,10 @@
 
 
           <p class="product-sub-heading">select size</p>
-          <input type="radio" name="size" value="xs" checked hidden id"="xs-size">
-          <label for="xs-size" class="size-radio-btn check">xs</label>
+          <input type="radio" name="size" value="xs" hidden id"="xs-size">
+          <label for="xs-size" class="size-radio-btn">xs</label>
 
-          <input type="radio" name="size" value="s" hidden id"="s-size">
+          <input type="radio" name="size" value="s" hidden id"="s-size"">
           <label for="s-size" class="size-radio-btn">s</label>
 
           <input type="radio" name="size" value="m" hidden id"="m-size">
@@ -112,20 +112,6 @@
         });
     </script>
 
-    <script>
-      window.onscroll = function()
-      {scrollFunction()};
 
-      var navbar= document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function scrollFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
   </body>
 </html>
