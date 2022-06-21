@@ -41,19 +41,19 @@
 
 <!-- Product Details -->
       <section class= "product-details">
-        <div class="image-slider" id="img"  style="background-image: url('../images/ladies_clothes1.jpg')">
+        <div class="image-slider" id="img" style="background-image: url('../images/ladies_clothes3.jpg')">
           <div class="product-images">
-            <img src="../images/ladies_clothes1.jpg" class="shop-item-image" onclick="changeImage1()" >
-            <img src="../images/ladies_clothes1.1.jpg" onclick="changeImage2()">
-            <img src="../images/ladies_clothes1.2.jpg"  onclick="changeImage3()">
+            <img src="../images/ladies_clothes3.jpg" class="shop-item-image" onclick="changeImage1()" >
+            <img src="../images/ladies_clothes3.1.jpg" onclick="changeImage2()">
+            <img src="../images/ladies_clothes3.2.jpg"  onclick="changeImage3()">
         </div>
         </div>
 
         <div class="details">
-          <h2 class="product-brand">H&M</h2>
-          <p class= "product-short-des">Wrap Dress</p>
-          <span class="product-price">$48</span>
-          <span class="product-actual-price">$60</span>
+          <h2 class="product-brand">Zara</h2>
+          <p class= "product-short-des">High-Waist Trousers</p>
+          <span class="product-price">$65</span>
+          <span class="product-actual-price">$59.90</span>
 
 
           <p class="product-sub-heading">select size</p>
@@ -70,7 +70,6 @@
           <label for="l-size" class="size-radio-btn">l</label>
 
           <p class="product-sub-heading">Purchase</p>
-          <!-- <button class="purchase-btn" type="button" onclick=testing())">add to cart</button> -->
           <button class="btn btn-primary shop-item-button" id='hideshow' type="button" onclick="testing()">ADD TO CART</button>
 
         </div>
@@ -95,26 +94,25 @@
 
       <!-- JavaScript for image slider -->
       <script>
-        function changeImage1() {
-          document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes1.jpg')";
-        }
+      function changeImage1() {
+        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.jpg')";
+      }
 
-        function changeImage2() {
-          document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes1.1.jpg')";
-        }
+      function changeImage2() {
+        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.1.jpg')";
+      }
 
-        function changeImage3() {
-          document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes1.2.jpg')";
-        }
+      function changeImage3() {
+        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.2.jpg')";
+      }
 
       </script>
 
       <script>
         function testing() {
-          window.frames[0].frameElement.contentWindow.addingToCart(0);
+          window.frames[0].frameElement.contentWindow.addingToCart(2);
         }
      </script>
-
 
     <script src="../products.js"></script>
     <script src="../app.js"></script>
