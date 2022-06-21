@@ -112,15 +112,15 @@ function updateCartTotal() {
 
 
 function setCookie(title,price,imgSrc) {
-  var array = localStorage.getItem("storage");
+  var array = $parseJSON($.cookie("storage"));
   const temp = title + ";" + price + ";" + imgSrc;
   array.push(temp);
-  localStorage.setItem("storage",JSON.stringify(array));
+  $.cookie("storage",JSON.stringify(array));
   // document.cookie = title + ";" + price + ";" + imgSrc;
 }
 
 function getCookie() {
-  var array = localStorage.getItem("storage");
+  var array = $parseJSON($.cookie("storage"));
     for(var i = 0; i < array.length; i++) {
       let decodedCookie = array[i];
       let ca = decodedCookie.split(';');
