@@ -3,9 +3,9 @@
   <head>
     <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
     <title>E-commerce site</title>
-    <link rel="stylesheet" href="product_details.css">
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../product_details.css">
+    <link rel="stylesheet" href="../cart.css">
+    <link rel="stylesheet" href="../style.css">
 
 
     <script src="https://kit.fontawesome.com/4a11cde73b.js" crossorigin="anonymous"></script>
@@ -13,28 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
 
-    <!-- JavaScript for Shopping Cart -->
-    <script src="js/cart.js" async></script>
+
   </head>
   <body>
 
     <!-- Navigation Bar -->
       <div class="navbar" id="navbar">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li class="dropdown">
           <a href="" class="dropbtn">Shop</a>
           <div class="dropdown-content">
-            <a href="ladies.html">Ladies</a>
-            <a href="men.html">Men</a>
-            <a href="kids.html">Kids</a>
+            <a href="../ladies.html">Ladies</a>
+            <a href="../men.html">Men</a>
+            <a href="../kids.html">Kids</a>
           </div>
         </li>
 
         <div class="navbar-right">
           <nav>
             <ul>
-              <li><a href=""><img src="images/account_logo.png" width= "15px"></a></li>
-              <li><a href="shopping-cart.html"><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
+              <li><a href=""><img src="../images/account_logo.png" width= "15px"></a></li>
+              <li><a href="../shopping-cart.html"><img src="../images/shoppingcart_logo.png" width= "15px"></a></li>
             </ul>
           </nav>
         </div>
@@ -44,9 +43,9 @@
       <section class= "product-details">
         <div class="image-slider" id="img">
           <div class="product-images">
-            <img src="images/ladies_clothes1.jpg" class="shop-item-image" onclick="changeImage1()" >
-            <img src="images/ladies_clothes1.1.jpg" onclick="changeImage2()">
-            <img src="images/ladies_clothes1.2.jpg"  onclick="changeImage3()">
+            <img src="../images/ladies_clothes1.jpg" class="shop-item-image" onclick="changeImage1()" >
+            <img src="../images/ladies_clothes1.1.jpg" onclick="changeImage2()">
+            <img src="../images/ladies_clothes1.2.jpg"  onclick="changeImage3()">
         </div>
         </div>
 
@@ -86,16 +85,16 @@
 
       <!-- iFrame for cart -->
       <div class="panel">
-        <iframe src="shopping-cart.html" class="iframe-content"  scrolling="none" width=100%  visibility=0 style="border:0; display:none"></iframe>
+        <iframe src="../shopping-cart.html" class="iframe-content"  scrolling="none" width=100%  visibility=0 style="border:0; display:none"></iframe>
     </div>
 
 
 
       <!-- JavaScript for navigation bar -->
-      <script src=js/nav.js></script>
+      <script src=../js/nav.js></script>
 
       <!-- JavaScript for image slider -->
-      <script src=js/image_slider.js></script>
+      <script src=../js/image_slider.js></script>
 
       <script>
         function testing() {
@@ -112,7 +111,7 @@
         });
     </script> -->
 
-    <script src="./products.js"></script>
-    <script src="./app.js"></script>
+    <script src="../products.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
