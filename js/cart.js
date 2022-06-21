@@ -3,7 +3,6 @@
 // } else {
 //   ready()
 // }
-let array = [];
 
 function ready(){
   getCookie();
@@ -113,17 +112,20 @@ function updateCartTotal() {
 
 
 function setCookie(title,price,imgSrc) {
+  var array = localStorage.getItem("storage");
   const temp = title + ";" + price + ";" + imgSrc;
   array.push(temp);
+  localStorage.setItem("storage",JSON.stringify(array));
   // document.cookie = title + ";" + price + ";" + imgSrc;
 }
 
 function getCookie() {
-  for(var i = 0; i < array.length; i++) {
-    let decodedCookie = array[i];
-    let ca = decodedCookie.split(';');
-      for (let j = 0; j < ca.length; j++) {
-        addItemToCart(ca[0],ca[1],ca[2]);
-      }
-  }
+  var array = localStorage.getItem("storage");
+    for(var i = 0; i < array.length; i++) {
+      let decodedCookie = array[i];
+      let ca = decodedCookie.split(';');
+        for (let j = 0; j < ca.length; j++) {
+          addItemToCart(ca[0],ca[1],ca[2]);
+        }
+    }
   }
