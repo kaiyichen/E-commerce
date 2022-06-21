@@ -61,7 +61,7 @@
           <input type="radio" name="size" value="xs" hidden id"="xs-size">
           <label for="xs-size" class="size-radio-btn">xs</label>
 
-          <input type="radio" name="size" value="s" hidden id"="s-size"">
+          <input type="radio" name="size" value="s" hidden id"="s-size">
           <label for="s-size" class="size-radio-btn">s</label>
 
           <input type="radio" name="size" value="m" hidden id"="m-size">
@@ -72,7 +72,7 @@
 
           <p class="product-sub-heading">Purchase</p>
           <!-- <button class="purchase-btn" type="button" onclick=testing())">add to cart</button> -->
-          <button class="btn btn-primary shop-item-button" id='hideshow' type="button" onclick="addToCart(0)">ADD TO CART</button>
+          <button class="btn btn-primary shop-item-button" id='hideshow' type="button" onclick="testing()">ADD TO CART</button>
 
         </div>
       </section>
@@ -86,7 +86,7 @@
 
       <!-- iFrame for cart -->
       <div class="panel">
-        <iframe src="shopping-cart.html" class="iframe-content" width=100% scrolling="no" style="border:0; display:none"></iframe>
+        <iframe src="shopping-cart.html" class="iframe-content"  scrolling="none" width=100%  style="border:0; display:none"></iframe>
     </div>
 
 
@@ -99,9 +99,9 @@
 
       <script>
         function testing() {
-          window.frames[0].frameElement.contentWindow.addToCart(0);
+          window.frames[0].frameElement.contentWindow.addingToCart(0);
         }
-//   </script>
+     </script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script>

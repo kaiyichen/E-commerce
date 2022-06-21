@@ -83,18 +83,16 @@
 
     </div>
 
-    <script>
-        const porductsListEl = document.querySelector(".products-list");
-        const seeMoreBtn = document.querySelector(".see-more-btn");
 
-        seeMoreBtn.addEventListener('click', () => {
-            porductsListEl.scrollIntoView({behavior: "smooth"})
-        })
-    </script>
 
 <script src="./products.js"></script>
 <script src="./app.js"></script>
+<script>
+  function addingToCart(id) {
+    addToCart(id);
+  }
 
+</script>
 <!-- JavaScript for navigation bar -->
 <script src=js/nav.js></script>
 </body>
