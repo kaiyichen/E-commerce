@@ -6,7 +6,7 @@ const products = [
     instock: 100,
     description:
       "Calf-length dress in gently draping jersey with a V-neck and sewn-in wrapover with narrow ties at one side. Softly draping butterfly sleeves and a gently flared skirt.",
-    imgSrc: "images/ladies_clothes1",
+    imgSrc: "images/ladies_clothes1.jpg",
 
   },
   {
@@ -16,7 +16,7 @@ const products = [
     instock: 43,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
-    imgSrc: "images/ladies_clothes2",
+    imgSrc: "images/ladies_clothes2.jpg",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const products = [
     instock: 10,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
-    imgSrc: "images/ladies_clothes3",
+    imgSrc: "images/ladies_clothes3.jpg",
   },
   {
     id: 3,
@@ -34,6 +34,6 @@ const products = [
     instock: 5,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
-    imgSrc: "images/ladies_clothes4",
+    imgSrc: "images/ladies_clothes4.jpg",
   },
 ];
