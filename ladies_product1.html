@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>E-commerce site</title>
+    <link rel="stylesheet" href="product_details.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/4a11cde73b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@300&family=Merriweather:ital,wght@1,900&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
+
+    <!-- JavaScript for Shopping Cart -->
+    <script src="js/cart.js" async></script>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+      <div class="navbar" id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">Shop</a>
+          <div class="dropdown-content">
+            <a href="ladies.html">Ladies</a>
+            <a href="men.html">Men</a>
+            <a href="kids.html">Kids</a>
+          </div>
+        </li>
+
+        <div class="navbar-right">
+          <nav>
+            <ul>
+              <li><a href=""><img src="images/account_logo.png" width= "15px"></a></li>
+              <li><a href=""><img src="images/shoppingcart_logo.png" width= "15px"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+<!-- Product Details -->
+      <section class= "product-details">
+        <div class="image-slider" id="img">
+          <div class="product-images">
+            <img src="images/ladies_clothes1.jpg" class="shop-item-image" onclick="changeImage1()" >
+            <img src="images/ladies_clothes1.1.jpg" onclick="changeImage2()">
+            <img src="images/ladies_clothes1.2.jpg"  onclick="changeImage3()">
+        </div>
+        </div>
+
+        <div class="details">
+          <h2 class="product-brand">H&M</h2>
+          <span class= "product-short-des">Wrap Dress</span>
+          <span class="product-price">$48</span>
+          <span class="product-actual-price">$60</span>
+
+
+          <p class="product-sub-heading">select size</p>
+          <input type="radio" name="size" value="xs" checked hidden id"="xs-size">
+          <label for="xs-size" class="size-radio-btn check">xs</label>
+
+          <input type="radio" name="size" value="s" hidden id"="s-size">
+          <label for="s-size" class="size-radio-btn">s</label>
+
+          <input type="radio" name="size" value="m" hidden id"="m-size">
+          <label for="m-size" class="size-radio-btn">m</label>
+
+          <input type="radio" name="size" value="l" hidden id"="l-size">
+          <label for="l-size" class="size-radio-btn">l</label>
+
+          <p class="product-sub-heading">Purchase</p>
+          <button class="purchase-btn" onclick="addItemToCart('Wrap Dress','$69','images/ladies_clothes1.jpg')">add to cart</button>
+
+        </div>
+      </section>
+
+    <!-- Description -->
+      <section class="product-description">
+        <h4>Product Description</h4>
+        <p>Calf-length dress in gently draping jersey with a V-neck and sewn-in wrapover with narrow ties at one side. Softly draping butterfly sleeves and a gently flared skirt.</p>
+      </section>
+
+      <div class="shop-item">
+          <span class="shop-item-title">Wrap dress</span>
+          <img class="shop-item-image" src="images/ladies_clothes1.jpg">
+          <div class="shop-item-details">
+              <span class="shop-item-price">$69</span>
+              <button class="btn btn-primary shop-item-button" type="button" onclick=testing()>ADD TO CART</button>
+          </div>
+      </div>
+
+      <iframe src="cart.html" id="testing-cart" width=100% height=400px></iframe>
+
+      <!-- JavaScript for navigation bar -->
+      <script src=js/nav.js></script>
+
+      <!-- JavaScript for image slider -->
+      <script src=js/image_slider.js></script>
+
+      <script>
+        function testing() {
+          window.frames[0].frameElement.contentWindow.addItemToCart('Testing tshirt','$100','images/ladies_clothes1.jpg'); 
+          // document.getElementById("testing-cart").contentWindow.addItemToCart('Testing tshirt','$100','images/ladies_clothes1.jpg');
+        }
+
+//       }
+//   </script>
+// <!--
+        document.getElementById('targetFrame').contentWindow.targetFunction()
+      </script>
+         -->
+      <!-- </script> -->
+  </body>
+</html>
