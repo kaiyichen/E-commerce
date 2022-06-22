@@ -104,6 +104,8 @@ h1 {
 }
 .cart-item .item-info img {
   width: 75px;
+  display:block;
+  float:left;
 }
 /* unit price */
 .cart-item .unit-price {
