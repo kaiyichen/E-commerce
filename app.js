@@ -53,6 +53,7 @@ function purchase() {
 
   const total = subtotalEl.innerHTML.split(':');
   const totalcost=total[1];
+  cart = [];
   alert('Thank you for your purchase,your total is' + totalcost);
 }
 // render cart items
