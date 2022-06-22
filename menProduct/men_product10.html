@@ -40,33 +40,20 @@
 
 <!-- Product Details -->
       <section class= "product-details">
-        <div class="image-slider" id="img" style="background-image: url('../images/ladies_clothes3.jpg')">
+        <div class="image-slider" id="img"  style="background-image: url('../images/men_shoes2.jpg')">
           <div class="product-images">
-            <img src="../images/ladies_clothes3.jpg" class="shop-item-image" onclick="changeImage1()" >
-            <img src="../images/ladies_clothes3.1.jpg" onclick="changeImage2()">
-            <img src="../images/ladies_clothes3.2.jpg"  onclick="changeImage3()">
+            <img src="../images/men_shoes2.jpg" class="shop-item-image" onclick="changeImage1()" >
+            <img src="../images/men_shoes2.1.jpg" onclick="changeImage2()">
+            <img src="../images/men_shoes2.2.jpg"  onclick="changeImage3()">
         </div>
         </div>
 
         <div class="details">
-          <h2 class="product-brand">Zara</h2>
-          <p class= "product-short-des">High-Waist Trousers</p>
-          <span class="product-price">$65</span>
-          <span class="product-actual-price">$59.90</span>
+          <h2 class="product-brand">Cotton On</h2>
+          <p class= "product-short-des">Flip Flops</p>
+          <span class="product-price">$29.99</span>
+          <span class="product-actual-price">$24.99</span>
 
-
-          <p class="product-sub-heading">select size</p>
-          <input type="radio" name="size" value="xs" hidden id"="xs-size">
-          <label for="xs-size" class="size-radio-btn">xs</label>
-
-          <input type="radio" name="size" value="s" hidden id"="s-size">
-          <label for="s-size" class="size-radio-btn">s</label>
-
-          <input type="radio" name="size" value="m" hidden id"="m-size">
-          <label for="m-size" class="size-radio-btn">m</label>
-
-          <input type="radio" name="size" value="l" hidden id"="l-size">
-          <label for="l-size" class="size-radio-btn">l</label>
 
           <p class="product-sub-heading">Purchase</p>
           <button class="btn btn-primary shop-item-button" id='hideshow' type="button" onclick="testing()">ADD TO CART</button>
@@ -77,7 +64,7 @@
     <!-- Description -->
       <section class="product-description">
         <h4>Product Description</h4>
-        <p>Calf-length dress in gently draping jersey with a V-neck and sewn-in wrapover with narrow ties at one side. Softly draping butterfly sleeves and a gently flared skirt.</p>
+        <p>Shoe for daily life</p>
       </section>
 
 
@@ -93,25 +80,27 @@
 
       <!-- JavaScript for image slider -->
       <script>
-      function changeImage1() {
-        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.jpg')";
-      }
+        function changeImage1() {
+          document.getElementById("img").style.backgroundImage = "url('../images/men_shoes2.jpg')";
+        }
 
-      function changeImage2() {
-        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.1.jpg')";
-      }
+        function changeImage2() {
+          document.getElementById("img").style.backgroundImage = "url('../images/men_shoes2.1.jpg')";
+        }
 
-      function changeImage3() {
-        document.getElementById("img").style.backgroundImage = "url('../images/ladies_clothes3.2.jpg')";
-      }
+        function changeImage3() {
+          document.getElementById("img").style.backgroundImage = "url('../images/men_shoes2.2.jpg')";
+        }
 
       </script>
 
       <script>
         function testing() {
-          window.frames[0].frameElement.contentWindow.addingToCart(2);
+          window.frames[0].frameElement.contentWindow.addingToCart(21);
+          alert('Added to cart');
         }
      </script>
+
 
     <script src="../products.js"></script>
     <script src="../app.js"></script>
